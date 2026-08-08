@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { personalInfo } from '../data/portfolioData';
-import aetherRagImg from '../assets/images/aether_rag_ai_1786021008097.jpg';
 import { GithubIcon, LinkedinIcon, LeetcodeIcon } from './SocialIcons';
 import TiltCard from './TiltCard';
 import {
@@ -106,7 +105,7 @@ const Hero = () => {
               >
                 <div className="hero-avatar-wrapper hero-photo-only-wrapper">
                   <img
-                    src={personalInfo.avatar || aetherRagImg}
+                    src={personalInfo.avatar}
                     alt="Hariharan M"
                     className="hero-avatar-image"
                     loading="eager"
@@ -114,7 +113,7 @@ const Hero = () => {
                     referrerPolicy="no-referrer"
                     onError={(e) => {
                       e.currentTarget.onerror = null;
-                      e.currentTarget.src = aetherRagImg;
+                      e.currentTarget.src = '/professional_image.png';
                     }}
                   />
                   <div className="touch-hint-badge">
@@ -233,7 +232,7 @@ const Hero = () => {
             >
               <div className="hero-avatar-wrapper hero-photo-only-wrapper">
                 <img
-                  src={personalInfo.avatar || aetherRagImg}
+                  src={personalInfo.avatar}
                   alt="Hariharan M"
                   className="hero-avatar-image"
                   loading="eager"
@@ -241,7 +240,7 @@ const Hero = () => {
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     e.currentTarget.onerror = null;
-                    e.currentTarget.src = aetherRagImg;
+                    e.currentTarget.src = '/professional_image.png';
                   }}
                 />
                 <div className="touch-hint-badge">
